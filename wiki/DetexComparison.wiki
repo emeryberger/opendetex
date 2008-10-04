@@ -6,6 +6,8 @@ Note that original Detex was removing `\verb` and `\footnote` commands, `figure`
 
 In original Detex, three pauses in source (---) remained three pauses in output. Also quotes were left in their original shape, which caused problems in word processors/spellcheckers.
 
+OpenDetex leaves less meaningless numbers and text, coming from arguments of LaTeX commands (`\setcounter{page}{2142}` leaves `2142` in original Detex).
+
 Both versions handle correctly section headers, text formatting (`\textbf` etc.), hyphenation (`\-` doesn't matter), nonbreakable spaces (`~`).
 
 = LaTeX source =
