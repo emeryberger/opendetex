@@ -2,7 +2,11 @@
 #labels Featured,Phase-Support
 
 = Comments =
-Note that original Detex was removing `\verb` commands, `figure` and `table` environments - contrary to OpenDetex. In original Detex, three pauses in source (---) remained three pauses in output. Also quotes were left in their original shape, which caused problems in word processors/spellcheckers.
+Note that original Detex was removing `\verb` and `\footnote` commands, `figure` and `table` environments, so you were not able to check spelling in image/table captions or footnotes. `\linebreak` command caused misinterpreting of document in original Detex.
+
+In original Detex, three pauses in source (---) remained three pauses in output. Also quotes were left in their original shape, which caused problems in word processors/spellcheckers.
+
+Both versions handle correctly section headers, text formatting (`\textbf` etc.), hyphenation (`\-` doesn't matter), nonbreakable spaces (`~`).
 
 = LaTeX source =
 
